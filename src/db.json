@@ -1,7 +1,7 @@
 {
-    "IsIlanları": [
+    "Ilanlar": [
         {
-            "Id": "1",
+            "Id":"1",
             "job_title": "Tam Yığın Geliştirici",
             "job_description": "Ön uç ve arka uç geliştirmede deneyimli bir Tam Yığın Geliştirici arıyoruz. İdeal aday, ön uç web mimarisini geliştirmek ve tasarlamak, uygulamaların duyarlılığını sağlamak ve web tasarım özellikleri için grafik tasarımcılarla birlikte çalışmakla sorumlu olacaktır. Ayrıca, bir projeyi başlangıçtan nihai ürüne kadar takip etmek gerekeceğinden iyi organizasyon becerilerine ve ayrıntılara dikkat etmeye ihtiyaç vardır.",
             "job_image_url": "images/job_image.jpg",
