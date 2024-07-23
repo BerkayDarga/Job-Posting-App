@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.postings {
+  background-color: #cdcccc;
+}
+
+.advertisements {
+  display: flex;
+  width: 1462px;
+  margin: 25px;
+  background-color: #fff;
+}
