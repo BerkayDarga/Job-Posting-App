@@ -1,29 +1,22 @@
-import { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import './App.css'
-import JobPostings from './JobPostings'
+import JobPostings from '../src/JobPostings'
+import PostingDetail from "../src/PostingDetail"
+import Header from "../src/Header"
 
 function App() {
-
-
-  const [jobPosting, setJobPosting] = useState([])
-
-
-  useEffect(() => {
-    fetch("http://localhost:4000/Ilanlar")
-      .then(response => response.json())
-      .then(data => setJobPosting(data))
-      .catch((error => console.log(error)))
-  }, []);
-
 
   return (
     <>
 
-      <div className="postings">
-        {jobPosting.map(postings => (
-          <JobPostings key={postings.Id} image={postings.job_image_url} title={postings.job_title} category={postings.category} button={postings.button}/>
-        ))}
-      </div>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<JobPostings />} />
+          <Route path="/PostingDetail/:id" element={<PostingDetail />} />
+        </Routes>
+      </Router>
 
     </>
   )

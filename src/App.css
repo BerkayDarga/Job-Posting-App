@@ -4,13 +4,165 @@
   box-sizing: border-box;
 }
 
-.postings {
-  background-color: #cdcccc;
+.wrapper {
+  width: 100%;
+  padding: 30px;
 }
 
-.advertisements {
+.header {
+  background-color: #ededed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header h1 {
+  text-align: left;
+  padding: 30px;
+}
+
+.header input {
+  width: 600px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 8px;
+  border: none;
+}
+
+.header input:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 60, 227);
+  padding: 30px;
+}
+
+.postings {
+  background-color: #ededed;
+  padding: 30px;
+}
+
+.postings .jobPostingButton {
   display: flex;
   width: 1462px;
-  margin: 25px;
+  margin-bottom: 25px;
+  margin-left: 5px;
   background-color: #fff;
+  width: 100%;
+  border: none;
+  align-items: center;
+  line-height: 25px;
 }
+
+.jobpostingbutton-img {
+  display: flex;
+}
+
+.header button {
+  position: absolute;
+  left: 965px;
+  width: 90px;
+  height: 38px;
+  border-radius: 8px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+}
+
+.description {
+  width: 148px;
+  height: 100px;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.details img {
+  width: 300px;
+  height: 200px;
+}
+
+.details-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.details-text {
+  line-height: 30px;
+}
+
+.details-text h3 {
+  color: red;
+  font-size: 20px;
+}
+
+
+
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.menu-container {
+  position: absolute;
+  display: inline-block;
+  padding-left: 5px;
+  top: 64px;
+  right: 145px;
+}
+
+.menu-item {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.options button {
+  display: block;
+  background: none;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+  background-color: red;
+  color: white;
+}
+
+.menu-container:hover .options {
+  display: block;
+}
+
+.location {
+  position: absolute;
+  right: 55px;
+  top: 64px;
+}
+
+
