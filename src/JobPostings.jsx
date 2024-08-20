@@ -7,6 +7,8 @@ const JobPostings = () => {
 
     const [searchPost, setSearchPosting] = useState([])
 
+
+
     useEffect(() => {
         fetch("http://localhost:4000/Ilanlar")
             .then(response => response.json())
@@ -61,13 +63,15 @@ const JobPostings = () => {
 
 
     return (
+
         <div className="wrapper">
+
+
             <div className="header">
                 <h1>İş İlan Portalı</h1>
 
                 <div className="container">
                     <input type="text" className="search" onChange={handleSearch} placeholder='Job' />
-                    <button>Submit</button>
                 </div>
             </div>
             <div className="postings">
